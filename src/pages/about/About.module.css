@@ -1,0 +1,122 @@
+.about h1 {
+    font-size: 2.4em;
+    margin-top: 0.5em;
+}
+
+.text-container {
+    margin-right: 50px;
+}
+
+.text-container p {
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.text-container strong {
+    font-size: 1.4em;
+}
+
+.about-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    height: auto;
+    max-width: 100%;
+}
+
+.image-container p {
+    font-size: 0.5em;
+    color: #A8B3B7;
+    text-align: center;
+    font-weight: 400;
+}
+
+.text-container {
+    flex: 1;
+}
+
+/* smaller text for small windoes on screens*/
+@media screen and (max-width: 1200px) {
+    .text-container p {
+        font-size: 1.3em;
+    }
+    
+    .text-container strong {
+        font-size: 1.2em;
+    }
+}
+
+/* screen for tablets */
+@media screen and (max-width: 900px) {
+    .about-page {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .image-container { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container img {
+        margin-top: 0;
+        max-width: 65%;
+    }
+
+    .image-container p {
+        font-size: 0.4em;
+    }
+
+    .text-container {
+        margin: 20px 60px;
+        
+    }
+    
+    .text-container p {
+        font-size: 1.2em;
+    }
+    
+    .text-container strong {
+        font-size: 1.1em;
+    }
+}
+
+/* screen for smartphones */
+@media screen and (max-width: 600px) {
+
+    .about h1 {
+        font-size: 1.8em;
+        margin-top: 0em;
+    }
+
+    .image-container img {
+        margin-top: 0;
+        max-width: 90%;
+    }
+
+    .image-container p {
+        font-size: 0.3em;
+    }
+
+    .text-container {
+        margin: 10px 20px;
+    }
+    
+    .text-container p {
+        font-size: 1em;
+    }
+    
+    .text-container strong {
+        font-size: 0.9em;
+    }
+}
