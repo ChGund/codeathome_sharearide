@@ -23,7 +23,7 @@ h2 {
     flex: 1;
 }
 
-img {
+.image-container img {
     height: auto;
     max-width: 100%;
 }
@@ -43,7 +43,7 @@ label {
     margin-bottom: 10px;
 }
 
-span {
+label span {
     display: block;
     margin-bottom: 1px;
     margin-left: 4em;
@@ -103,7 +103,7 @@ button {
         align-items: center;
     }
 
-    img {
+    .image-container img {
         margin-top: 3em;
         max-width: 70%;
     }
@@ -123,7 +123,7 @@ button {
         margin-bottom: 0.375em;
     }
     
-    span {
+   label span {
         margin-bottom: 0.0625em;
         margin-left: 0;
         font-size: 1.125em;
@@ -144,7 +144,7 @@ button {
 @media screen and (max-width: 600px) {
 
 
-    img {
+    .image-container img {
         margin-top: 2em;
         max-width: 90%;
     }
@@ -159,7 +159,7 @@ button {
         height: 3em;
     }
 
-    span {
+    label span {
         margin-left: 0;
         font-size: 1em;
         text-align: left;
