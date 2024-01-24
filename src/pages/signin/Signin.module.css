@@ -37,7 +37,7 @@ h3 {
     margin-top: -10em;
 }
 
-p {
+.image-container p {
     font-size: 0.5em;
     color: #A8B3B7;
     text-align: center;
@@ -118,7 +118,7 @@ button {
         max-width: 70%;
     }
 
-    p {
+    .image-container p {
         font-size: 0.4em;
     }
 
@@ -159,7 +159,7 @@ button {
         max-width: 90%;
     }
 
-    p {
+    .image-container p {
         font-size: 0.3em;
     }
 
