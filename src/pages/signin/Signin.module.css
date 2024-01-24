@@ -6,11 +6,19 @@
     flex: 1;
 }
 
-h2 {
+.right-side {
     flex: 1;
+}
+
+h2 {
+    /* flex: 1; */
     font-size: 3.125em;
     text-align: center;
     margin-top: 1em;
+}
+
+h3 {
+    font-size: 2em;
 }
 
 .login-page {
@@ -26,6 +34,7 @@ h2 {
 .image-container img {
     height: auto;
     max-width: 100%;
+    margin-top: -10em;
 }
 
 .image-container p {
@@ -81,6 +90,7 @@ button {
     height: 3em;
     border: none;
     margin-top: 2em;
+    
 }
 
 /* screen for tablets */
@@ -159,7 +169,7 @@ button {
         height: 3em;
     }
 
-    label span {
+   label span {
         margin-left: 0;
         font-size: 1em;
         text-align: left;
