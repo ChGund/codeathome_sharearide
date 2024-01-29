@@ -14,17 +14,17 @@ export default function Login() {
 
   return (
     <div>
-      {/* displays the heading in the middle of the ride side of the page: */}
+      {/* displays the heading in the middle of the right side of the page: */}
       <div className={styles["heading-spacer"]}>          
         <div className={styles["empty-left-side"]}></div>
-        <h2>Share a Ride</h2>
+        <h2>Connecting the countryside</h2>
       </div>
       <div className={styles["login-page"]}>
         <div className={styles["image-container"]}>
           <img src={HomeImage} alt="Share a Ride" />
           <p>Image by storyset on Freepik</p>
         </div>
-        <form onSubmit={handleSubmit} className={styles["form-container"]}>
+        <form onSubmit={handleSubmit} className={styles["form-container-l"]}>
           <label>
             <span>E-mail address:</span>
             <input

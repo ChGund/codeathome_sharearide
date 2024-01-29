@@ -8,9 +8,10 @@
 
 h2 {
     flex: 1;
-    font-size: 3.125em;
+    font-size: 2.3em;
     text-align: center;
-    margin-top: 1em;
+    margin-top: 0.1em;
+    margin-bottom: 0.2em;
 }
 
 .login-page {
@@ -26,6 +27,7 @@ h2 {
 .image-container img {
     height: auto;
     max-width: 100%;
+    margin-top: -3em;
 }
 
 .image-container p {
@@ -35,15 +37,15 @@ h2 {
     font-weight: 400;
 }
 
-.form-container {
+.form-container-l {
     flex: 1;
 }
-label {
+.form-container-l label {
     display: block;
     margin-bottom: 10px;
 }
 
-label span {
+.form-container-l label span {
     display: block;
     margin-bottom: 1px;
     margin-left: 4em;
@@ -51,7 +53,7 @@ label span {
     text-align: left;
   }
   
-input {
+  .form-container-l input {
     padding: 0.5em 0.52em;
     font-size: 1.25em; 
     width: 70%;
@@ -61,16 +63,15 @@ input {
     border-radius: 0.3em;
     padding: 8px;
     margin-bottom: 0.9em;
-    margin-left: 4em;
    }
 
-input:focus{
+   .form-container-l input:focus{
     border: 0.2em solid #FF735C;
     border-radius: 0.3em;
    }
 
 
-button {
+   .form-container-l button {
     background-color: #FF735C;
     padding: 0.6em 0.9em;
     cursor: pointer;
@@ -80,15 +81,14 @@ button {
     width: 10em;
     height: 3em;
     border: none;
-    margin-top: 2em;
+    margin-top: 0.3em;
 }
 
 /* screen for tablets */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1033px) {
     
-    /* heading is removed here, because on tablets/smartphones it is shown in the title component */
     .heading-spacer {
-        display: none;
+        display: block;
     }
     
     .login-page {
@@ -112,18 +112,18 @@ button {
         font-size: 0.4em;
     }
 
-    button {
+    .form-container-l button {
         font-size: 1.125em;
         width: 9em;
         border: none;
         margin-top: 1.5em;
     }
 
-    label {
+    .form-container-l label {
         margin-bottom: 0.375em;
     }
     
-   label span {
+    .form-container-l label span {
         margin-bottom: 0.0625em;
         margin-left: 0;
         font-size: 1.125em;
@@ -131,7 +131,7 @@ button {
         margin-left: 10em;
       }
       
-    input {
+      .form-container-l input {
         font-size: 1.125em;
         width: 55%;
         height: 2.5em;
@@ -153,24 +153,56 @@ button {
         font-size: 0.3em;
     }
 
-    button {
+    .form-container-l button {
         font-size: 1em;
         width: 8em;
         height: 3em;
     }
 
-    label span {
+    .form-container-l label span {
         margin-left: 0;
         font-size: 1em;
         text-align: left;
         margin-left: 3em;
       }
       
-    input {
+      .form-container-l input {
         font-size: 1em;
         width: 70%;
         height: 2.3em;
         padding: 0.5em;
        }
+
+}
+
+@media screen and (max-width: 405px) {
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .image-container img {
+        margin-top: 0;
+    }
+
+    .form-container-l {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 290px) {
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
 
 }
