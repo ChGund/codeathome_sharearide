@@ -7,9 +7,9 @@ h2 {
 .search-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin-bottom: 10px;
+    max-height: 63vh;
 }
 
 .search-form label span {
@@ -22,12 +22,12 @@ h2 {
 .search-form input {
 font-size: 1.25em; 
 max-width: 100%;
-height: 3em;
+height: 2.5em;
 background-color: #FFDCD7;
 border: none;
 border-radius: 0.3em;
 padding: 8px;
-margin-bottom: 0.9em;
+margin-bottom: 0.4em;
 text-align: left;
 }
 
@@ -56,11 +56,9 @@ border-radius: 0.3em;
         font-size: 2em;
     }
 
-
     .search-form {
-        margin-top: 2em;
+        min-height: 70vh;
     }
-
 
     .search-form button {
         font-size: 1.125em;
@@ -93,7 +91,7 @@ border-radius: 0.3em;
     h2 {
         font-size: 1.8em;
     }
-
+   
     .search-form button {
         font-size: 1em;
         width: 8em;

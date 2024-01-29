@@ -7,6 +7,7 @@ import Search from './pages/search/Search';
 import Share from './pages/share/Share';
 import About from './pages/about/About';
 import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/codeathome_final_project/share" element={<Share />} />
           <Route path="/codeathome_final_project/about" element={<About />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

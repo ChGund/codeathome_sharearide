@@ -19,8 +19,7 @@ export default function Login() {
       <div className={styles["heading-spacer"]}>          
         <div className={styles["empty-left-side"]}></div>
         <div className={styles["right-side"]}>
-        <h2>Connecting the countryside</h2>
-        <h3>Create an account</h3>
+        <h2>Create an account</h2>
         </div>  
       </div>
       <div className={styles["signin-page"]}>
