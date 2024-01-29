@@ -15,7 +15,7 @@ export default function Login() {
 
   return (
     <div>
-      {/* displays the heading in the middle of the ride side of the page: */}
+      {/* displays the heading in the middle of the right side of the page: */}
       <div className={styles["heading-spacer"]}>          
         <div className={styles["empty-left-side"]}></div>
         <div className={styles["right-side"]}>
