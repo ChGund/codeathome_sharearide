@@ -19,16 +19,16 @@ export default function Login() {
       <div className={styles["heading-spacer"]}>          
         <div className={styles["empty-left-side"]}></div>
         <div className={styles["right-side"]}>
-        <h2>Share a Ride</h2>
+        <h2>Connecting the countryside</h2>
         <h3>Create an account</h3>
         </div>  
       </div>
-      <div className={styles["login-page"]}>
+      <div className={styles["signin-page"]}>
         <div className={styles["image-container"]}>
           <img src={HomeImage} alt="Share a Ride" />
           <p>Image by storyset on Freepik</p>
         </div>
-        <form onSubmit={handleSubmit} className={styles["form-container"]}>
+        <form onSubmit={handleSubmit} className={styles["form-container-s"]}>
           <label>
             <span>E-mail address:</span>
             <input
@@ -45,7 +45,7 @@ export default function Login() {
               value={password}
             />
           </label>
-          <button>Sign in</button>
+          <button>Continue</button>
         </form>
       </div>
     </div>
