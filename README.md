@@ -1,3 +1,32 @@
+# Final project for the Digital Shapers #codeathome program 2024 by TechLabs 
+# Topic: "Tech for Good"
+
+## Project name
+Share a Ride
+
+## Problem statement
+In the countryside the bus connections can be really bad. There might be only one bus a day (driving pupils to school). At the same time, more and more grocery stores in villages have to close down, and doctors are rare in small places. This is a real problem for people who cannot ride a car (anymore) - elderly, handicapped or children/youth.
+On the other hand, there are people driving to bigger towns with grocery stores regularly. They might have some space to take another person or two in return for a small fare. With gas getting a lot more expensive these days, they might be happy to do so. 
+
+## Solution
+Connection the countryside: the idea is to create a website where drivers and people in need of a ride can get connected. This is specifically meant for short rides to the next bigger town and desirably back, as well as for offering regular rides. 
+
+On our website drivers can enter their ride with the following information:
++ locations: where from and where to
++ start and return times
++ amount of available seats 
++ fare
++ extras: i.e. space for a wheelchair
++ they can create regular, repeating rides (i.e. Friday, 6 p.m.)
+
+Riders can browse through the offered rides, and book a ride on the platform.
+
+## Members
++ Christine Gundel
++ Fernanda Flórez Hereña
++ Aaqib Javed
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
