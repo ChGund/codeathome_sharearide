@@ -1,53 +1,30 @@
-import { useState } from 'react'
-import styles from './Search.module.css'
+import { useCollection } from '../../hooks/useCollection';
 
+import styles from '../share/Share.module.css'
 
 export default function Search() {
-  const [date, setDate] = useState("");
-  const [location, setLocation] = useState("");
-  const [destination, setDestination] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    //backend needs to modify this to handle the form:
-    console.log({
-       date,
-       location, 
-       destination});
-  };
+  const { documents: rides, error } = useCollection('offeredRides');
   
   return (
-    <div>
-    <h2>Search a ride</h2>
-    <form onSubmit={handleSubmit} className={styles["search-form"]}>
-      <label>
-          <span>Date:</span>
-          <input
-            type="date"
-            required
-            onChange={(e) => setDate(e.target.value)}
-            value={date}
-          />
-        </label>
-        <label>
-          <span>Location:</span>
-          <input
-            type="text"
-            required
-            onChange={(e) => setLocation(e.target.value)}
-            value={location}
-          />
-        </label>
-        <label>
-          <span>Destination:</span>
-          <input
-            type="text"
-            onChange={(e) => setDestination(e.target.value)}
-            value={destination}
-          />
-        </label>
-      <button>Continue</button>
-    </form> 
+    <>
+    <h2>Search a Ride:</h2>
+    <div className={styles['container-search']}> 
+    <div></div>
+      <ul className={styles['rides-list']}>
+        {rides && rides
+          .slice() 
+          .sort((a, b) => new Date(a.date) - new Date(b.date)) 
+          .map((ride) => (
+            <li key={ride.id}>
+              <p className={styles.location}>{ride.location}</p>
+              <p className={styles.destination}>{ride.destination}</p>
+              <p className={styles.date}>{ride.date}</p>  
+            </li>
+          ))}
+          <div></div>
+      </ul>
+      {error && <p>{error}</p>}
     </div>
-  )
+    </>
+  );
 }

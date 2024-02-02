@@ -1,3 +1,8 @@
+.about {
+    margin-top: 6.5em;
+    margin-bottom: 15em;
+}
+
 .about h1 {
     font-size: 2.4em;
     margin-top: 0.5em;
@@ -45,21 +50,34 @@
 
 /* smaller text for small windoes on screens*/
 @media screen and (max-width: 1200px) {
-    .text-container p {
-        font-size: 1.3em;
-    }
-    
-    .text-container strong {
-        font-size: 1.2em;
-    }
-}
 
-/* screen for tablets */
-@media screen and (max-width: 900px) {
+   .about {
+        margin-top: 5.5em;
+        margin-bottom: 3em;
+    }
+
     .about-page {
         flex-direction: column;
         align-items: stretch;
     }
+
+    .text-container {
+        margin: 20px 130px;
+    }
+
+    .text-container p {
+        font-size: 1.4em;
+    }
+
+    .image-container img {
+        max-width: 70%;
+    }
+    
+}
+
+/* screen for tablets */
+@media screen and (max-width: 900px) {
+ 
 
     .image-container { 
         display: flex;
@@ -78,17 +96,13 @@
     }
 
     .text-container {
-        margin: 20px 60px;
-        
+        margin: 20px 80px;
     }
     
     .text-container p {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
-    
-    .text-container strong {
-        font-size: 1.1em;
-    }
+
 }
 
 /* screen for smartphones */
@@ -109,14 +123,15 @@
     }
 
     .text-container {
-        margin: 10px 20px;
+        margin: 10px 50px;
     }
     
     .text-container p {
         font-size: 1em;
     }
-    
-    .text-container strong {
-        font-size: 0.9em;
+
+    .about {
+        margin-bottom: 8em;
     }
+    
 }

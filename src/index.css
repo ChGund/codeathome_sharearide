@@ -8,5 +8,8 @@
   color: black;
   font-size: 16px;
   text-align: center;
+}
 
+body {
+  height: 100vh;
 }

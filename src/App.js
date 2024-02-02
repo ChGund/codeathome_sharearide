@@ -10,12 +10,14 @@ import About from './pages/about/About';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 
+import styles from './App.css'
+
 
 function App() {
   const { authIsReady, user } = useAuthContext()
 
   return (
-    <div className='App'>
+    <div className={styles.App}>
       {authIsReady && (
         <BrowserRouter>
         <Navbar />

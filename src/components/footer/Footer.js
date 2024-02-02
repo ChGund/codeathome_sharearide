@@ -5,7 +5,7 @@ import styles from './Footer.module.css'
 
 export default function Footer() {
   return (
-    <div className={styles["footer"]}>
+    <div className={styles.footer}>
     <ul className={styles["footer-links"]}>
         <li><Link to='/codeathome_final_project/'>Home</Link></li>
         <li><Link to='/codeathome_final_project/about'>About us</Link></li>
