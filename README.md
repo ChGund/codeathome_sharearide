@@ -97,3 +97,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Media
+* Logo designed by Ella
+* Image by storyset: "https://www.freepik.com/free-vector/car-sharing-concept-illustration_42106439.htm#position=2" on Freepik
