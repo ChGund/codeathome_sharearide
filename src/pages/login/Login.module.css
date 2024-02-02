@@ -83,7 +83,13 @@ h2 {
     height: 3em;
     border: none;
     margin-top: 0.3em;
+    margin-bottom: 2em;
 }
+
+p {
+    text-decoration: none;
+}
+
 
 
 /* screen for tablets */

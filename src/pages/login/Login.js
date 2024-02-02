@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { useLogin } from '../../hooks/useLogin'
+
 import HomeImage from "./HomeImage.jpg";
 import styles from "./Login.module.css";
-import { useLogin } from '../../hooks/useLogin'
+
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -45,6 +48,8 @@ export default function Login() {
           {!isPending && <button>Sign in</button>}
           {isPending && <button disabled>Loading</button>}
           {error && <p>{error}</p>}
+          <br />
+          <p className={styles["nav-link"]}><NavLink to='/codeathome_final_project/signin'>Create an account here</NavLink></p>
         </form>
       </div>
     </div>

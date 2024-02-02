@@ -70,4 +70,5 @@ export const useFirestore = (collection) => {
 
   return { addDocument, deleteDocument, response }
 
+
 }

@@ -8,11 +8,12 @@ import styles from './Signin.module.css'
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [name, setName] = useState("")
   const { signup, isPending, error } = useSignup()
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    signup(email, password);
+    signup(email, password, name);
   };
 
   return (
@@ -46,6 +47,14 @@ export default function Login() {
               value={password}
             />
           </label>
+       {/*    <label>
+            <span>Username:</span>
+            <input
+              type="name"
+              onChange={(e) => setName(e.target.value)}
+              value={name}
+            />
+          </label> */}
           {!isPending && <button>Continue</button>}
           {isPending && <button disabled>Loading</button>}
           { error && <p>{error}</p>}

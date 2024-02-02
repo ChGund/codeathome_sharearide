@@ -17,8 +17,11 @@ export default function Search() {
           .map((ride) => (
             <li key={ride.id}>
               <p className={styles.location}>{ride.location}</p>
+              <p className={styles.arrow}>>>></p>
               <p className={styles.destination}>{ride.destination}</p>
-              <p className={styles.date}>{ride.date}</p>  
+              <p className={styles.date}>{ride.date}</p>   
+              <p className={styles.seats}>Seats: {ride.seats}</p>
+              <p className={styles.contact}>Contact: {ride.contact}</p>
             </li>
           ))}
           <div></div>

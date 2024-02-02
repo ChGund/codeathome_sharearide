@@ -1,14 +1,19 @@
 import { useState } from "react";
+import { useAuthContext } from "../../hooks/useAuthContext";
 
 import { useFirestore } from "../../hooks/useFirestore";
 
 import styles from "./Share.module.css";
 
 export default function RidesForm({ uid }) {
+  const { user } = useAuthContext()
   const [location, setLocation] = useState("");
   const [destination, setDestination] = useState("");
   const [date, setDate] = useState("");
+  const [seats, setSeats] = useState("");
   const { addDocument, response } = useFirestore("offeredRides");
+
+  console.log(response);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,12 +22,15 @@ export default function RidesForm({ uid }) {
       location,
       destination,
       date,
+      seats,
+      contact: user.email
     });
 
     //cleanup the form
     setLocation("");
     setDestination("");
     setDate("");
+    setSeats("");
   };
 
   return (
@@ -52,6 +60,14 @@ export default function RidesForm({ uid }) {
             type="text"
             onChange={(e) => setDestination(e.target.value)}
             value={destination}
+          />
+        </label>
+        <label>
+          <span>Number of seats:</span>
+          <input
+            type="number"
+            onChange={(e) => setSeats(e.target.value)}
+            value={seats}
           />
         </label>
         <button>Add</button>
