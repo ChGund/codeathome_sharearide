@@ -1,231 +1,220 @@
 .heading-spacer {
-    display: flex;
+  display: flex;
 }
 
 .empty-left-side {
-    flex: 1;
+  flex: 1;
 }
 
 .right-side {
-    flex: 1;
+  flex: 1;
 }
 
 h2 {
-    font-size: 2.3em;
-    text-align: center;
-    margin-top: 3em;
+  font-size: 2.3em;
+  text-align: center;
+  margin-top: 3em;
 }
 
 .signin-page {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1em;
-    margin-bottom: 15em;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-bottom: 15em;
+}
 
 .image-container {
-    flex: 1;
+  flex: 1;
 }
 
 .image-container img {
-    height: auto;
-    max-width: 100%;
-    margin-top: -3em;
+  height: auto;
+  max-width: 100%;
+  margin-top: -3em;
 }
 
 .image-container p {
-    font-size: 0.5em;
-    color: #A8B3B7;
-    text-align: center;
-    font-weight: 400;
+  font-size: 0.5em;
+  color: #a8b3b7;
+  text-align: center;
+  font-weight: 400;
 }
 
 .form-container-s {
-    flex: 1;
+  flex: 1;
 }
 .form-container-s label {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .form-container-s label span {
-    display: block;
-    margin-bottom: 1px;
-    margin-left: 4em;
-    font-size: 1.25em;
-    text-align: left;
-  }
-  
-  .form-container-s input {
-    padding: 0.5em 0.52em;
-    font-size: 1.25em; 
-    width: 70%;
-    height: 3em;
-    background-color: #FFDCD7;
-    border: none;
-    border-radius: 0.3em;
-    padding: 8px;
-    margin-bottom: 0.9em;
-   }
+  display: block;
+  margin-bottom: 1px;
+  margin-left: 4em;
+  font-size: 1.25em;
+  text-align: left;
+}
 
-   .form-container-s input:focus{
-    border: 0.2em solid #FF735C;
-    border-radius: 0.3em;
-   }
+.form-container-s input {
+  padding: 0.5em 0.52em;
+  font-size: 1.25em;
+  width: 70%;
+  height: 3em;
+  background-color: #ffdcd7;
+  border: none;
+  border-radius: 0.3em;
+  padding: 8px;
+  margin-bottom: 0.9em;
+}
 
+.form-container-s input:focus {
+  border: 0.2em solid #ff735c;
+  border-radius: 0.3em;
+}
 
-   .form-container-s button {
-    background-color: #FFDCD7;
-    border: 0.1em solid black;
-    cursor: pointer;
-    font-size: 1.375em;
-    text-align: center;
-    border-radius: 5em;
-    width: 10em;
-    height: 3em;
-    margin-top: 0.3em;
-    
+.form-container-s button {
+  background-color: #ffdcd7;
+  border: 0.1em solid black;
+  cursor: pointer;
+  font-size: 1.375em;
+  text-align: center;
+  border-radius: 5em;
+  width: 10em;
+  height: 3em;
+  margin-top: 0.3em;
 }
 
 /* screen for tablets */
 @media screen and (max-width: 1033px) {
-    
-    .heading-spacer {
-        display: block;
-    }
-    
-    .signin-page {
-        flex-direction: column;
-        align-items: stretch;
-        margin-bottom: 2em;
-    }
+  .heading-spacer {
+    display: block;
+  }
 
-    h2 {
-        font-size: 2em;
-    }
+  .signin-page {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 2em;
+  }
 
-    h3 {
-        font-size: 1.8em;
-    }
+  h2 {
+    font-size: 2em;
+  }
 
-    .image-container { 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  h3 {
+    font-size: 1.8em;
+  }
 
-    .image-container img {
-        margin-top: 0.1em;
-        max-width: 70%;
-    }
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .image-container p {
-        font-size: 0.4em;
-        margin-top: -3em;
-    }
-    .form-container-s {
-        margin-top: 2em;
-    }
+  .image-container img {
+    margin-top: 0.1em;
+    max-width: 70%;
+  }
 
+  .image-container p {
+    font-size: 0.4em;
+    margin-top: -3em;
+  }
+  .form-container-s {
+    margin-top: 2em;
+  }
 
-    .form-container-s button {
-        font-size: 1.125em;
-        width: 9em;
-    }
+  .form-container-s button {
+    font-size: 1.125em;
+    width: 9em;
+  }
 
-    .form-container-s label {
-        margin-bottom: 0.375em;
-    }
-    
-    .form-container-s label span {
-        margin-bottom: 0.0625em;
-        margin-left: 0;
-        font-size: 1.125em;
-        text-align: left;
-        margin-left: 10em;
-      }
-      
-      .form-container-s input {
-        font-size: 1.125em;
-        width: 55%;
-        height: 2.5em;
-        padding: 0.5em;
-        margin-bottom: 0.5em;
-       }
+  .form-container-s label {
+    margin-bottom: 0.375em;
+  }
 
+  .form-container-s label span {
+    margin-bottom: 0.0625em;
+    margin-left: 0;
+    font-size: 1.125em;
+    text-align: left;
+    margin-left: 10em;
+  }
+
+  .form-container-s input {
+    font-size: 1.125em;
+    width: 55%;
+    height: 2.5em;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  h2 {
+    font-size: 1.8em;
+  }
 
-    h2 {
-        font-size: 1.8em;
-    }
+  h3 {
+    font-size: 1.6em;
+  }
 
-    h3 {
-        font-size: 1.6em;
-    }
+  .image-container img {
+    margin-top: 0.1em;
+    max-width: 90%;
+  }
 
-    .image-container img {
-        margin-top: 0.1em;
-        max-width: 90%;
-    }
+  .image-container p {
+    font-size: 0.3em;
+  }
 
-    .image-container p {
-        font-size: 0.3em;
-    }
+  .form-container-s button {
+    font-size: 1em;
+    width: 8em;
+    height: 3em;
+  }
 
-    .form-container-s button {
-        font-size: 1em;
-        width: 8em;
-        height: 3em;
-    }
+  .form-container-s label span {
+    margin-left: 0;
+    font-size: 1em;
+    text-align: left;
+    margin-left: 3em;
+  }
 
-    .form-container-s label span {
-        margin-left: 0;
-        font-size: 1em;
-        text-align: left;
-        margin-left: 3em;
-      }
-      
-      .form-container-s input {
-        font-size: 1em;
-        width: 70%;
-        height: 2.3em;
-        padding: 0.5em;
-       }
-
+  .form-container-s input {
+    font-size: 1em;
+    width: 70%;
+    height: 2.3em;
+    padding: 0.5em;
+  }
 }
 
 @media screen and (max-width: 405px) {
+  h2 {
+    font-size: 1.5em;
+  }
 
-    h2 {
-        font-size: 1.5em;
-    }
+  h3 {
+    font-size: 1.3em;
+  }
 
-    h3 {
-        font-size: 1.3em;
-    }
+  .image-container img {
+    margin-top: 0;
+  }
 
-    .image-container img {
-        margin-top: 0;
-    }
-
-    .form-container-s {
-        margin-top: 0;
-    }
-
+  .form-container-s {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 290px) {
+  h2 {
+    font-size: 1.2em;
+  }
 
-    h2 {
-        font-size: 1.2em;
-    }
-
-    h3 {
-        font-size: 1em;
-    }
-
+  h3 {
+    font-size: 1em;
+  }
 }

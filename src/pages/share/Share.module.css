@@ -236,7 +236,6 @@
   .rides-list .contact {
     font-size: 0.9em;
     padding: 14px 8px;
-
   }
 
   .rides-list .date {
@@ -291,7 +290,6 @@
   .rides-form input {
     font-size: 1em;
     height: 2.3em;
-    
   }
   .rides-list {
     min-height: 150px;
@@ -325,8 +323,6 @@
     font-size: 0.8em;
   }
 }
-
-
 
 @media screen and (max-width: 405px) {
   h2 {
