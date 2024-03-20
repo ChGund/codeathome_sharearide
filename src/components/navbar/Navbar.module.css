@@ -1,129 +1,122 @@
 .navbar {
-    width: 100%;
-    max-height: 6.25rem;
-    background: white;
-    border-bottom: #FF735C 6px solid;
-    margin-bottom: 0.2em;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    position: fixed;
-    top: 0;
-    z-index: 9;
-  }
-  
-  .logo-container {
-    margin: 10px;
+  width: 100%;
+  max-height: 6.25rem;
+  background: white;
+  border-bottom: #ff735c 6px solid;
+  margin-bottom: 0.2em;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
 
-  }
-  
-  .navbar .logo-container img {
-    height: auto;
-    max-width: 100%;
-    max-height: 60px; 
-  }
-  
-  .title {
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 2.5em;
-    margin-left: 10px; 
-  }
+.logo-container {
+  margin: 10px;
+}
 
-  .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: end;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    height: 2em;
-    cursor: pointer;
-  }
+.navbar .logo-container img {
+  height: auto;
+  max-width: 100%;
+  max-height: 60px;
+}
 
-  .hamburger-menu span {
-    width: 5rem;
-    margin: 0.3rem 0;
-    background-color: #FF735C;
-    border-radius: 0.5rem;
-    color: #FF735C;
-    border: 6px #FF735C solid;
-    display: flex;
-  }
-  
-  .navbar ul {
-    margin-top: 50px;
-    display: none;
-    list-style-type: none;
-    flex-direction: column;
-    width: 100%;
- }
+.title {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 2.5em;
+  margin-left: 10px;
+}
 
-  .navbar ul.open {
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  height: 2em;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  width: 5rem;
+  margin: 0.3rem 0;
+  background-color: #ff735c;
+  border-radius: 0.5rem;
+  color: #ff735c;
+  border: 6px #ff735c solid;
+  display: flex;
+}
+
+.navbar ul {
+  margin-top: 50px;
+  display: none;
+  list-style-type: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navbar ul.open {
   display: flex;
   z-index: 9999;
+}
 
- } 
- 
- .overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3); 
-  backdrop-filter: blur(5px); 
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
   z-index: 1;
 }
 
-  .navbar li {
-    padding: 15px;
-    margin: 10px;
-    background-color: #FFDCD7;
-    border: 2px solid black;
-    border-radius: 35px;
-    width: 200px;
-  }
-  
-  .navbar a {
-    color: black;
-    font-size: 1.125em;
-    text-decoration: none;
-    text-align: center;
-  }
-
-  .navbar .sign-out {
-    background-color: #FF735C;
-    border: 2px solid #FF735C;
-  }
-
-
-  .navbar ul li:not(.active):hover {
-    background-color: #fff;
-  }
-
-
-  .navbar ul li.sign-out:hover {
-    background-color: #fff;
-    border: 2px solid #fff;
+.navbar li {
+  padding: 15px;
+  margin: 10px;
+  background-color: #ffdcd7;
+  border: 2px solid black;
+  border-radius: 35px;
+  width: 200px;
 }
-  
+
+.navbar a {
+  color: black;
+  font-size: 1.125em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar .sign-out {
+  background-color: #ff735c;
+  border: 2px solid #ff735c;
+}
+
+.navbar ul li:not(.active):hover {
+  background-color: #fff;
+}
+
+.navbar ul li.sign-out:hover {
+  background-color: #fff;
+  border: 2px solid #fff;
+}
 
 /* Styles for Tablets*/
-@media screen and (max-width: 900px) { 
-  
+@media screen and (max-width: 900px) {
   .navbar {
     max-height: 5.5rem;
-    border-bottom: #FF735C 4px solid;
-
+    border-bottom: #ff735c 4px solid;
   }
   .navbar .logo-container img {
-    max-height: 50px; 
+    max-height: 50px;
   }
-  
+
   .title {
     letter-spacing: 0;
     font-size: 2.3em;
@@ -137,35 +130,33 @@
   .hamburger-menu span {
     width: 4rem;
     margin: 0.3rem 0;
-    border: 4px solid #FF735C;
+    border: 4px solid #ff735c;
   }
-  
+
   .navbar ul {
     margin-top: 30px;
- }
+  }
 
- .navbar li {
-  padding: 12px;
-  width: 180px;
- }
+  .navbar li {
+    padding: 12px;
+    width: 180px;
+  }
 
- .navbar a {
-  font-size: 1em;
-}
-
+  .navbar a {
+    font-size: 1em;
+  }
 }
 
 /* Styles for Smartphones*/
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) {
   .navbar {
     max-height: 5rem;
-    border-bottom: #FF735C 3px solid;
-
+    border-bottom: #ff735c 3px solid;
   }
   .navbar .logo-container img {
-    max-height: 40px; 
+    max-height: 40px;
   }
-  
+
   .title {
     letter-spacing: 0;
     font-size: 2em;
@@ -179,26 +170,24 @@
   .hamburger-menu span {
     width: 3rem;
     margin-bottom: 0.25rem;
-    border: 3px solid #FF735C;
+    border: 3px solid #ff735c;
   }
-  
+
   .navbar ul {
     margin-top: 20px;
- }
+  }
 
- .navbar li {
-  padding: 10px;
-  width: 160px;
- }
+  .navbar li {
+    padding: 10px;
+    width: 160px;
+  }
 
- .navbar a {
-  font-size: 0.95em;
-}
-
+  .navbar a {
+    font-size: 0.95em;
+  }
 }
 
 @media screen and (max-width: 375px) {
-  
   .navbar {
     max-height: 4.5rem;
   }
@@ -208,13 +197,11 @@
   }
 
   .navbar .logo-container img {
-    max-height: 35px; 
+    max-height: 35px;
   }
 }
 
-
 @media screen and (max-width: 330px) {
-
   .navbar {
     max-height: 4rem;
   }
@@ -226,13 +213,12 @@
   .hamburger-menu span {
     width: 2rem;
     margin-bottom: 0.25rem;
-    border: 2px solid #FF735C;
+    border: 2px solid #ff735c;
   }
 
   .navbar .logo-container img {
-    max-height: 30px; 
+    max-height: 30px;
   }
-
 }
 
 @media screen and (max-width: 280px) {

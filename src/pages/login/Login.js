@@ -1,25 +1,24 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { useLogin } from '../../hooks/useLogin'
+import { useLogin } from "../../hooks/useLogin";
 
 import HomeImage from "./HomeImage.jpg";
 import styles from "./Login.module.css";
 
-
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { login, error, isPending } = useLogin()
+  const { login, error, isPending } = useLogin();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    login (email, password);
+    login(email, password);
   };
 
   return (
     <div>
       {/* displays the heading in the middle of the right side of the page: */}
-      <div className={styles["heading-spacer"]}>          
+      <div className={styles["heading-spacer"]}>
         <div className={styles["empty-left-side"]}></div>
         <h2>Connecting the countryside</h2>
       </div>
@@ -49,7 +48,11 @@ export default function Login() {
           {isPending && <button disabled>Loading</button>}
           {error && <p>{error}</p>}
           <br />
-          <p className={styles["nav-link"]}><NavLink to='/codeathome_final_project/signin'>Create an account here</NavLink></p>
+          <p className={styles["nav-link"]}>
+            <NavLink to="/codeathome_final_project/signin">
+              Create an account here
+            </NavLink>
+          </p>
         </form>
       </div>
     </div>

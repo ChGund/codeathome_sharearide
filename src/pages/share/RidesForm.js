@@ -6,7 +6,7 @@ import { useFirestore } from "../../hooks/useFirestore";
 import styles from "./Share.module.css";
 
 export default function RidesForm({ uid }) {
-  const { user } = useAuthContext()
+  const { user } = useAuthContext();
   const [location, setLocation] = useState("");
   const [destination, setDestination] = useState("");
   const [date, setDate] = useState("");
@@ -23,7 +23,7 @@ export default function RidesForm({ uid }) {
       destination,
       date,
       seats,
-      contact: user.email
+      contact: user.email,
     });
 
     //cleanup the form

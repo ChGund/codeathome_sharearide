@@ -2,14 +2,13 @@ import { useState } from "react";
 import { useSignup } from "../../hooks/useSignup";
 import HomeImage from "./HomeImage.jpg";
 
-
-import styles from './Signin.module.css'
+import styles from "./Signin.module.css";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [name, setName] = useState("")
-  const { signup, isPending, error } = useSignup()
+  const [name, setName] = useState("");
+  const { signup, isPending, error } = useSignup();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,11 +18,11 @@ export default function Login() {
   return (
     <div>
       {/* displays the heading in the middle of the right side of the page: */}
-      <div className={styles["heading-spacer"]}>          
+      <div className={styles["heading-spacer"]}>
         <div className={styles["empty-left-side"]}></div>
         <div className={styles["right-side"]}>
-        <h2>Create an account</h2>
-        </div>  
+          <h2>Create an account</h2>
+        </div>
       </div>
       <div className={styles["signin-page"]}>
         <div className={styles["image-container"]}>
@@ -47,17 +46,9 @@ export default function Login() {
               value={password}
             />
           </label>
-       {/*    <label>
-            <span>Username:</span>
-            <input
-              type="name"
-              onChange={(e) => setName(e.target.value)}
-              value={name}
-            />
-          </label> */}
           {!isPending && <button>Continue</button>}
           {isPending && <button disabled>Loading</button>}
-          { error && <p>{error}</p>}
+          {error && <p>{error}</p>}
         </form>
       </div>
     </div>
